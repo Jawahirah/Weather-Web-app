@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="assets/images/weather-news.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/CSS/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+
+<body>
+    <main>
+        <!-- Left section -->
+        <section id="left-section">
+            <!-- <img src="assets/images/cloudy.jpg" alt=""> -->
+            <header>
+                <h4>forecast</h4>
+            </header>
+            <h3>The Only Weather Forcast You Need </h3>
+            <hr>
+            <label for="zip-code">
+                <input type="number" id="zip-code" name="zip-code" placeholder="Enter zip-code " required>
+            </label>
+            <button type="button" id="submit-btn" class="btn btn-light">Submit</button>
+        </section>
+        <!-- Right section -->
+        <section class="right-section">
+            <h1>Today</h1>
+            <div id="weather-card">
+                <div>
+                    <h5 class="temp">Tempreture</h5>
+                    <img id="weatherIcon" src="https://openweathermap.org/img/wn/10d@2x.png" width="25%">
+                    <h5 class="status">Status</h5>
+                    <p id="date">Date</p>
+                </div>
+                <div class="vl"></div>
+                <div>
+                    <p>Pressure: <span id="pressure"></span> </p>
+                    <p>Humidity: <span id="humidity"></span> </p>
+                    <p>Wind Speed: <span id="windSpeed"></span></p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- JS -->
+    <script src="assets/JS/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/main.js"></script>
+</body>
+
+</html>

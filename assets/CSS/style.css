@@ -1,0 +1,159 @@
+body{
+
+}
+#left-section{
+    padding: 30px;
+    background-image: url('../images/cloudy.jpg');
+    width: 60%;
+    border-bottom-right-radius:30px;
+    border-top-right-radius:30px
+   
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    justify-content:center;
+    width: 40%;
+    height: 100vh;
+
+}
+h3{
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 3%;
+    text-shadow: 1px 1px 30px black;
+    color: white;
+    font-weight: 400;
+}
+hr{
+    width: 20%;
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 5px;
+    opacity: 1;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    background-color: white;
+    margin: 20px auto;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+input{
+    width: 100%;
+    opacity: 0.5;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    padding-left: 3%;
+    
+}
+::placeholder {
+    color: black;
+    font-weight:600;
+    opacity: 1; 
+  }
+  h4{
+    color: aliceblue;
+    text-shadow: 2px 2px 4px black;
+    font-weight:300 ;
+    width: fit-content;
+  }
+  #weather-card{
+    width: 80%;
+    height: 35%;
+    box-shadow: 0px 5px 6px 5px #77777736;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 1% ;
+  }
+  
+h1{
+    width:80%;
+    margin: 0 auto 3% auto;
+    text-align: left;
+    font-weight: bold
+}
+.vl {
+    border-left: 3px solid rgb(205, 209, 205);
+    height: 50%;
+    margin: 0 2%;  }
+  .temp{
+    font-weight: 900;
+    display: inline;
+  }
+  .status{
+    font-weight: 300;
+    font-family: system-ui;
+  }
+  .btn{
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (max-width:524px){
+    #left-section {
+      width: 100%;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+  }
+  main {
+    flex-direction: column;
+}
+.right-section {
+  width: 100%;
+  margin-top: 3%;
+  height: unset;
+}
+
+.vl {
+  display: none;
+}
+#weather-card {
+  width: 90%;
+  padding: 2% 3%;
+  justify-content: left;
+}
+
+  }
+
+@media (max-width:1073px){
+  main {
+    flex-direction: column;
+}
+#left-section {
+  width: 100%;
+  border-bottom-right-radius: 0; 
+  border-top-right-radius: 0;
+}
+* {
+  font-size: 1.3rem;
+}
+
+.right-section {
+  width: 100%;
+  margin: 10% 0;
+  height: unset;
+}
+#weather-card {
+  width: 90%;
+  padding: 2% 3%;
+}
+}
+
+
